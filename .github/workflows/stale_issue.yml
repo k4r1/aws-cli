@@ -2,6 +2,9 @@ name: "Close stale issues"
 
 # Controls when the action will run.
 on:
+  push:
+    branches: 
+      - stale_action
   schedule:
     - cron: "*/15 * * * *"
 
